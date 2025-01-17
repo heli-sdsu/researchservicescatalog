@@ -4,13 +4,20 @@ body {
   font-family: sans-serif;
 }
 
-h3 {
-
-    margin: 0 0 23px;
+p {
+  color: #2D2828;
+  margin: 0 0 34px;
 }
 
-p {
-    margin: 0 0 34px;
+h2 {
+  padding-top: 20px;
+  color: #A6192E;
+  margin: 0 0 23px;
+}
+
+h3 {
+    color: #008080;
+    margin: 0 0 23px;
 }
 
 /* ---- input ---- */
