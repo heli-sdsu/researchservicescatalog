@@ -1,3 +1,4 @@
+# Research Services Catalog
 
 Categories:
 
@@ -12,53 +13,56 @@ Categories:
 
 AI
 --
-Copilot
-NotebookLm
-Gemini
-TIDE 
-OpenWebUI
+- Copilot
+- NotebookLM
+- Gemini
+- TIDE
+- OpenWebUI
 
 Cloud
 --
-AWS
-Azure
-GCP
-CloudBank
-NAIRR
+- AWS
+- Azure
+- GCP
+- CloudBank
+- NAIRR
 
 Servers/Hardware
 --
-Cloud Server
-Physical Server
-On-Premises Virtual Machine
-Desktop/Laptop
+- Cloud Server
+- Physical Server
+- On-Premises Virtual Machine
+- Desktop/Laptop
 
 HPC
 --
-TIDE
-VERNE
-ACCESS
-NAIRR
-CSRC
+- TIDE
+- VERNE
+- ACCESS
+- NAIRR
+- CSRC
 
 Storage
 --
-Globus
-Google Drive/Shared Drive
+- Globus
+- Google Drive/Shared Drive
+- Azure File and Object Storage
+- Research Data Services
 
 Security
 --
-Virtru
+- Virtru
 
 Data Analysis/Programming
 --
-SAS
-SPSS
-R / RStudio
-MatLab
+- SAS
+- SPSS
+- R / RStudio
+- MatLab
+- NVivio
 
 Survey/Data Collection
 --
-REDCap
-Qualtrics
-EndNote
+- REDCap
+- Qualtrics
+- EndNote
