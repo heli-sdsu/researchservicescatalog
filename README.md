@@ -7,7 +7,7 @@ Categories:
 - Servers/Hardware
 - HPC
 - Storage
-- Security
+- Security/Compliance
 - Data Analysis/Programming
 - Survey/Data Collection
 
@@ -52,6 +52,7 @@ Storage
 Security
 --
 - Virtru
+- Security Consultation
 
 Data Analysis/Programming
 --
@@ -65,4 +66,8 @@ Survey/Data Collection
 --
 - REDCap
 - Qualtrics
+
+Other
+--
 - EndNote
+- Websites
