@@ -1,0 +1,55 @@
+/**
+* Custom
+* Any custom styles implemented in the OmniUpdate environment should go here
+*/
+.disclaimer {
+	display: block;
+	font: italic 15px/1.2 proxima-nova, Helvetica, Arial, sans-serif;
+	margin: 32px 21px;
+	position: relative;
+}
+.disclaimer:before {
+	content: "";
+	position: absolute;
+	top: -14px;
+	left: 0;
+	width: 59px;
+	height: 1px;
+	background-color: #f62530;
+}
+.disclaimer p {
+	margin-bottom: 18px;
+}
+/* Improve spacing between components */
+@media (min-width: 700px) {
+	.disclaimer {
+		margin: 46px 0;
+	}
+	.disclaimer:before {
+		top: -20px;
+	}
+	.academics-intro + section.here-section,
+	.academics-intro + section.find-support-section {
+		padding-top: 0;
+	}
+	.college-intro + section.here-section,
+	.college-intro + section.find-support-section {
+		padding-top: 0;
+	}
+}
+@media (min-width: 1025px) {
+	.disclaimer {
+		margin: 52px 0;
+	}
+	.disclaimer:before {
+		top: -22px;
+	}
+	.academics-intro + section.here-section,
+	.academics-intro + section.find-support-section {
+		padding-top: 0;
+	}
+	.college-intro + section.here-section,
+	.college-intro + section.find-support-section {
+		padding-top: 0;
+	}
+}

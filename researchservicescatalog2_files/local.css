@@ -1,0 +1,16 @@
+/*
+Implementation Skeleton v3 - 12/6/18
+Add styles to overwrite customer CSS and global oustyles CSS. USE WITH CAUTION.
+*/
+
+/* 2023.01.11 - temporary styles to approximate planned removal of text-transform: uppercase rule */
+
+.hero h1, 
+h2, 
+.here-section__list, 
+.events3up__date, 
+.cta--button {
+	text-transform: none;
+}
+
+
