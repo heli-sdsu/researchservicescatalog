@@ -233,6 +233,14 @@
 			margin-top: 10px;
 			float: none;
 		}
+
+		th[scope=col], th[scope=row], td {
+			border: 2px solid black;
+			text-align:center;
+		}
+
+
+
 	</style>
 	<meta property="og:image" content="https://it.sdsu.edu/_resources/images/homepage/faculty-square.png">
 	<meta property="og:image:alt" content="Faculty reviewing research">
@@ -517,7 +525,6 @@
 									<table>
 										<thead>
 											<tr>
-												<td>&nbsp;</td>
 												<th scope="col">Faculty</th>
 												<th scope="col">Staff</th>
 												<th scope="col">Students</th>
@@ -529,7 +536,6 @@
 										</thead>
 										<tbody>
 											<tr>
-												<th scope="row">&nbsp;</th>
 												<td>Yes</td>
 												<td>Yes</td>
 												<td>No</td>
@@ -567,8 +573,8 @@
 									<table>
 										<thead>
 											<tr>
-												<td>&nbsp;</td>
-												<th scope="col">Deidentified</th>
+												<th scope="col">Data Type</th>
+												<th scope="col" style="text-align:center">Deidentified</th>
 												<th scope="col">Pl1</th>
 												<th scope="col">Pl2</th>
 												<th scope="col">Pl3</th>
@@ -580,7 +586,7 @@
 										</thead>
 										<tbody>
 											<tr>
-												<th scope="row">&nbsp;</th>
+												<th scope="row">Allowed Type?</th>
 												<td>Yes</td>
 												<td>No</td>
 												<td>No</td>
