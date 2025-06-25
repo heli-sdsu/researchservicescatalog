@@ -557,9 +557,71 @@
 
 					<h2>Costs</h2>
 					<div class="wysiwyg" style="margin: 0 auto;">
+						<div class="table-block">
+							<div class="table-block__wrapper">
+								<div class="table-block__holder">
+									<table>
+										<thead>
+											<tr>
+												<th scope="col">Storage Class</th>
+												<th scope="col">Recommended Usage</th>
+												<th scope="col">Retrieval Time</th>
+												<th scope="col">Approx. Monthly Cost for 1TB</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">S3 Standard</th>
+												<td>Frequently accessed data; general-purpose storage for active content and applications</td>
+												<td>Milliseconds</td>
+												<td>$23.00</td>
+											</tr>
+											<tr>
+												<th scope="row">S3 Intelligent-Tiering</th>
+												<td>Data with unpredictable or changing access patterns; automatic cost optimization without performance impact</td>
+												<td>Milliseconds (Frequent/IA); Minutes to hours (Archive tiers, if enabled)</td>
+												<td>$23 (Frequent tier); lower for other tiers</td>
+											</tr>
+											<tr>
+												<th scope="row">S3 Standard-IA</th>
+												<td>Infrequently accessed data requiring rapid access; suitable for backups and disaster recovery</td>
+												<td>Milliseconds</td>
+												<td>$12.50</td>
+											</tr>
+											<tr>
+												<th scope="row">S3 One Zone-IA</th>
+												<td>Infrequently accessed data that can be recreated if lost; stored in a single Availability Zone</td>
+												<td>Milliseconds</td>
+												<td>$10.00</td>
+											</tr>
+											<tr>
+												<th scope="row">S3 Glacier Instant Retrieval</th>
+												<td>Archive data that needs immediate access; ideal for medical images, news media, and user-generated content archives</td>
+												<td>Milliseconds</td>
+												<td>$10.00</td>
+											</tr>
+											<tr>
+												<th scope="row">S3 Glacier Flexible Retrieval</th>
+												<td>Archive data accessed 1-2 times per year; suitable for backups and disaster recovery</td>
+												<td>Expedited: 1-5 minutes; Standard: 3-5 hours; Bulk: 5-12 hours</td>
+												<td>$10.00</td>
+											</tr>
+											<tr>
+												<th scope="row">S3 Glacier Deep Archive</th>
+												<td>Long-term archive and digital preservation; data accessed less than once a year</td>
+												<td>Standard: 12 hours; Bulk: 48 hours</td>
+												<td>$10.00</td>
+											</tr>
+										</tbody>
+									</table><button class="table-block__prev" aria-hidden="true" tabindex="-1">Scroll
+										Right</button>
+									<button class="table-block__next" aria-hidden="true" tabindex="-1">Scroll
+										Left</button>
 
-						<p>SDSU's IT Division (ITD) maintains an Amazon Web Services (AWS) enterprise account configured with an AWS landing zone. The landing zone allows ITD to provision new AWS accounts pre-configured with single sign-on (SSO) and secure access.</p>
-						<p>AWS costs for AWS accounts are cost recovered by ITD on a quarterly basis from either state or foundation funds. A Memorandum of Understanding (MOU) for Cloud Services it executed between ITD and the requesting department or project.</p>
+								</div>
+							</div>
+						</div>
+
 
 						<ul>
 							<li><a href="https://calculator.aws/#/" target="">AWS Pricing Calculator</a></li>
