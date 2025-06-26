@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Microsoft Azure | IT Division | SDSU</title>
+	<title>AWS S3 Storage | IT Division | SDSU</title>
 	<link rel="canonical" href="https://it.sdsu.edu/apps-software">
 	<link rel="apple-touch-icon" sizes="180x180"
 		href="https://ou-resources.sdsu.edu/crimson/icons/apple-touch-icon.png">
@@ -244,14 +244,14 @@
 	</style>
 	<meta property="og:image" content="https://it.sdsu.edu/_resources/images/homepage/faculty-square.png">
 	<meta property="og:image:alt" content="Faculty reviewing research">
-	<meta property="og:title" content="Microsoft Azure | IT Division | SDSU">
+	<meta property="og:title" content="AWS S3 Storage | IT Division | SDSU">
 	<meta property="og:url" content="https://it.sdsu.edu/apps-software">
 	<meta property="og:description" content="">
 	<meta property="og:type" content="">
 	<meta property="og:updated_time" content="2024-09-18T02:19:33.838811766-07:00">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:url" content="https://it.sdsu.edu/apps-software">
-	<meta name="twitter:title" content="Microsoft Azure | IT Division | SDSU">
+	<meta name="twitter:title" content="AWS S3 Storage | IT Division | SDSU">
 	<meta name="twitter:description" content="">
 	<script>
 		var COMMENT_PAGE_URL = "https://it.sdsu.edu/apps-software";
@@ -486,7 +486,7 @@
 		<main id="main" class="main">
 			<section class="page-intro">
 				<div class="container">
-					<h1>Microsoft Azure</h1>
+					<h1>AWS S3 Storage</h1>
 				</div>
 			</section>
 			<section class="section genimglist">
@@ -500,13 +500,13 @@
 					<div class="genimglist__wrap">
 						<div class="genimglist__item">
 							<div class="genimglist__img">
-								<img src="icons/azure-logo-large.png"
+								<img src="icons/aws-logo-large.png"
 									alt="Illustrative rendering of earth with latitude and longitude">
 							</div>
 							<div class="genimglist__content">
 								
 								<div class="genimglist__body">
-									<span>Microsoft Azure is a flexible, enterprise-grade cloud computing platform offering a wide array of services including virtual machines, AI and machine learning tools, data analytics, storage, and high-performance computing (HPC) capabilities. For researchers at San Diego State University, Azure enables scalable and secure computing environments that support data-intensive research and strong compliance with regulatory standards. SDSU faculty and staff can leverage AWS through institutional programs and credits, with guidance and support available through the IT Division.</span>
+									<span>Amazon S3 (Simple Storage Service) is a cloud-based object storage service that supports scalable, secure, and high-performance data storage for a wide range of use cases. It offers flexible storage classes, built-in security and compliance features, and automatic scaling to accommodate virtually any volume of data. With high durability, availability, and cost-optimization options, Amazon S3 enables efficient data management and access control for diverse workloads. SDSU faculty can contact the university's IT Division for more information on how to utilize the service's storage capabilities.</span>
 								</div>
 
 							</div>
@@ -542,7 +542,7 @@
 												<td>Yes</td>
 												<td>Yes</td>
 												<td>No</td>
-												<td>No <sub>1</sub></td>
+												<td>No</td>
 											</tr>
 										</tbody>
 									</table><button class="table-block__prev" aria-hidden="true" tabindex="-1">Scroll
@@ -557,10 +557,73 @@
 
 					<h2>Costs</h2>
 					<div class="wysiwyg" style="margin: 0 auto;">
+						<div class="table-block">
+							<div class="table-block__wrapper">
+								<div class="table-block__holder">
+									<table>
+										<thead>
+											<tr>
+												<th scope="col">Storage Class</th>
+												<th scope="col">Recommended Usage</th>
+												<th scope="col">Retrieval Time</th>
+												<th scope="col">Approx. Monthly Cost for 1TB</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">S3 Standard</th>
+												<td>Frequently accessed data; general-purpose storage for active content and applications</td>
+												<td>Milliseconds</td>
+												<td>$23.00</td>
+											</tr>
+											<tr>
+												<th scope="row">S3 Intelligent-Tiering</th>
+												<td>Data with unpredictable or changing access patterns; automatic cost optimization without performance impact</td>
+												<td>Milliseconds (Frequent/IA); Minutes to hours (Archive tiers, if enabled)</td>
+												<td>$23 (Frequent tier); lower for other tiers</td>
+											</tr>
+											<tr>
+												<th scope="row">S3 Standard-IA</th>
+												<td>Infrequently accessed data requiring rapid access; suitable for backups and disaster recovery</td>
+												<td>Milliseconds</td>
+												<td>$12.50</td>
+											</tr>
+											<tr>
+												<th scope="row">S3 One Zone-IA</th>
+												<td>Infrequently accessed data that can be recreated if lost; stored in a single Availability Zone</td>
+												<td>Milliseconds</td>
+												<td>$10.00</td>
+											</tr>
+											<tr>
+												<th scope="row">S3 Glacier Instant Retrieval</th>
+												<td>Archive data that needs immediate access; ideal for medical images, news media, and user-generated content archives</td>
+												<td>Milliseconds</td>
+												<td>$10.00</td>
+											</tr>
+											<tr>
+												<th scope="row">S3 Glacier Flexible Retrieval</th>
+												<td>Archive data accessed 1-2 times per year; suitable for backups and disaster recovery</td>
+												<td>Expedited: 1-5 minutes; Standard: 3-5 hours; Bulk: 5-12 hours</td>
+												<td>$10.00</td>
+											</tr>
+											<tr>
+												<th scope="row">S3 Glacier Deep Archive</th>
+												<td>Long-term archive and digital preservation; data accessed less than once a year</td>
+												<td>Standard: 12 hours; Bulk: 48 hours</td>
+												<td>$10.00</td>
+											</tr>
+										</tbody>
+									</table><button class="table-block__prev" aria-hidden="true" tabindex="-1">Scroll
+										Right</button>
+									<button class="table-block__next" aria-hidden="true" tabindex="-1">Scroll
+										Left</button>
+
+								</div>
+							</div>
+						</div>
 
 						<p>SDSU's IT Division (ITD) maintains an Amazon Web Services (AWS) enterprise account configured with an AWS landing zone. The landing zone allows ITD to provision new AWS accounts pre-configured with single sign-on (SSO) and secure access.</p>
 						<p>AWS costs for AWS accounts are cost recovered by ITD on a quarterly basis from either state or foundation funds. A Memorandum of Understanding (MOU) for Cloud Services it executed between ITD and the requesting department or project.</p>
-
 						<ul>
 							<li><a href="https://calculator.aws/#/" target="">AWS Pricing Calculator</a></li>
 						</ul>
@@ -623,7 +686,7 @@
 				<div class="container">
 					<h2>How Do I Get It?</h2>
 					<p>
-						To learn more about AWS and how to gain access, please enter a ServiceNow <a href="https://sdsu.service-now.com/sp?id=sc_cat_item&sys_id=97a539211bb825505764fd1b1e4bcb00&sysparm_category=29ac153fdbbf4c9024094672399619e9">Research Cyberinfrastructure Consultation request</a>.
+						To learn more about AWS S3 Storage and how to gain access, please enter a ServiceNow <a href="https://sdsu.service-now.com/sp?id=sc_cat_item&sys_id=97a539211bb825505764fd1b1e4bcb00&sysparm_category=29ac153fdbbf4c9024094672399619e9">Research Cyberinfrastructure Consultation request</a>.
 					</p>
 				</div>
 			</section>
@@ -631,7 +694,7 @@
 				<div class="container">
 					<h2>How Do I Get Help?</h2>
 					<p>
-						Submit <a href="https://sdsu.service-now.com/sp?id=sc_cat_item&sys_id=97a539211bb825505764fd1b1e4bcb00&sysparm_category=29ac153fdbbf4c9024094672399619e9">Research Cyberinfrastructure Consultation request</a>
+						Please refer to ServiceNow Knowledge Base articles or submit a <a href="https://sdsu.service-now.com/sp?id=sc_cat_item&sys_id=97a539211bb825505764fd1b1e4bcb00&sysparm_category=29ac153fdbbf4c9024094672399619e9">Research Cyberinfrastructure Consultation request</a>.
 					</p>
 				</div>
 			</section>
